@@ -1,5 +1,5 @@
 ---
-image: "buluma/github-action-molecule:4.0.9"
+image: buluma/github-action-molecule:4.0.9
 
 variables:
   PY_COLORS: 1
@@ -17,13 +17,13 @@ molecule:
   retry: 0
   parallel:
     matrix:
-      - image: "alpine-openrc"
-        tag: "latest"
-      - image: "amazonlinux"
-        tag: "latest"
-      - image: "enterpriselinux"
+      - image: alpine-openrc
+        tag: latest
+      - image: amazonlinux
+        tag: latest
+      - image: enterpriselinux
         tag: "7"
-      - image: "enterpriselinux"
+      - image: enterpriselinux
         tag: "8"
 
 testing:
@@ -37,31 +37,31 @@ testing:
   retry: 1
   parallel:
     matrix:
-      - image: "alpine-openrc"
-        tag: "latest"
-      - image: "amazonlinux"
-        tag: "latest"
-      - image: "enterpriselinux"
+      - image: alpine-openrc
+        tag: latest
+      - image: amazonlinux
+        tag: latest
+      - image: enterpriselinux
         tag: "7"
-      - image: "enterpriselinux"
+      - image: enterpriselinux
         tag: "8"
-      - image: "enterpriselinux"
-        tag: "latest"
-      - image: "debian-systemd"
-        tag: "latest"
-      - image: "debian-systemd"
-        tag: "buster"
-      - image: "fedora-systemd"
+      - image: enterpriselinux
+        tag: latest
+      - image: debian-systemd
+        tag: latest
+      - image: debian-systemd
+        tag: buster
+      - image: fedora-systemd
         tag: "35"
-      - image: "fedora-systemd"
-        tag: "latest"
-      - image: "fedora-systemd"
-        tag: "rawhide"
-      - image: "docker-opensuse-systemd"
-        tag: "latest"
-      - image: "docker-ubuntu-systemd"
-        tag: "latest"
-      - image: "docker-ubuntu-systemd"
-        tag: "focal"
-      - image: "docker-ubuntu-systemd"
-        tag: "bionic"
+      - image: fedora-systemd
+        tag: latest
+      - image: fedora-systemd
+        tag: rawhide
+      - image: docker-opensuse-systemd
+        tag: latest
+      - image: docker-ubuntu-systemd
+        tag: latest
+      - image: docker-ubuntu-systemd
+        tag: focal
+      - image: docker-ubuntu-systemd
+        tag: bionic
